@@ -1,4 +1,4 @@
-export const SELECT_NICK = 'ADD_TODO'
+export const CHOOSE_NICK = 'ADD_TODO'
 
 /*
  * other constants
@@ -12,5 +12,5 @@ export const SomeConstants = {
  */
 
 export function setNick(nick) {
-  return { type: SELECT_NICK, nick }
+  return { type: CHOOSE_NICK, nick }
 }
