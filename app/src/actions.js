@@ -1,5 +1,7 @@
+import Immutable from 'immutable'
+
 export const CHOOSE_NICK = 'ADD_TODO'
-export const SEND_MESSAGE = 'SEND_MESSAGE'
+export const ADD_COMMENT = 'ADD_COMMENT'
 
 /*
  * other constants
@@ -16,6 +18,12 @@ export function setNick(nick) {
   return { type: CHOOSE_NICK, nick }
 }
 
-export function sendMessage(message) {
-  return { type: SEND_MESSAGE, message }
+export function addComment(nick, ISOTime, text) {
+  return { type: ADD_COMMENT,
+    comment: Immutable.Map({
+      nick: nick,
+      ISOTime: ISOTime,
+      text: text
+    })
+  }
 }

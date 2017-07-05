@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ChooseNick from './containers/ChooseNick'
-import logo from './logo.svg';
+import Chat from './components/Chat'
 import './App.css';
 
 class App extends Component {
@@ -8,13 +8,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Iä! Iä!</h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <ChooseNick />
+        <Chat />
       </div>
     );
   }
