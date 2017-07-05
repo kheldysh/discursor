@@ -1,8 +1,9 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import http from 'http'
+import { host, port } from './common/config'
 
 const app = express()
-const port = 3000
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -19,6 +20,8 @@ app.post('/start_chat', (req, res) => {
 
 })
 
-app.listen(3000, function () {
-  console.log('Discursor server listening on port ')
+const server = http.createServer(app)
+
+server.listen(port, host, () => {
+  console.log('Discursor server listening on port '+port)
 })
