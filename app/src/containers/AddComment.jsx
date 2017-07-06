@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addLocalComment } from '../actions'
+import { addLocalComment } from '../actions/comments'
 
 let AddComment = ({ ownNick, addComment }) => {
   let input

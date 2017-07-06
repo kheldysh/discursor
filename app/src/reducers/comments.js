@@ -1,5 +1,5 @@
 import { List } from 'immutable'
-import { ADD_COMMENT } from '../actions'
+import { ADD_COMMENT } from '../actions/comments'
 
 const comments = (state = List(), action) => {
   switch (action.type) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { setNick } from '../actions'
+import { setNick } from '../actions/nick'
 
 let ChooseNick = ({ nick, dispatch }) => {
   let input

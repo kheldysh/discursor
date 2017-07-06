@@ -1,5 +1,5 @@
 import { Map } from 'immutable'
-import { CHOOSE_NICK } from '../actions'
+import { CHOOSE_NICK } from '../actions/nick'
 
 const nick = (state = Map({nick: ''}), action) => {
   switch (action.type) {
