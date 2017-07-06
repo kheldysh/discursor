@@ -1,12 +1,9 @@
-import { Map } from 'immutable'
 import { CHOOSE_NICK } from '../actions/nick'
 
-const nick = (state = Map({nick: ''}), action) => {
+const nick = (state = '', action) => {
   switch (action.type) {
     case CHOOSE_NICK:
-      return Map({
-        nick: action.nick
-      })
+      return action.nick
     default:
       return state
   }
