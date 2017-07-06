@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import CommentList from '../components/CommentList'
 
 const getTimeSortedComments = comments => {
-  return comments.sortBy(comment => comment.get('ISOTime'))
+  return comments.sortBy(comment => comment.ISOTime)
 }
 
 const mapStateToProps = state => {

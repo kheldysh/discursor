@@ -1,16 +1,18 @@
 import React from 'react'
-import IPropTypes from 'immutable-props'
+import PropTypes from 'prop-types'
 
-const Comment = ({comment}) => (
+const Comment = ({nick, ISOTime, text}) => (
   <div>
-    <div>{comment.get('ISOTime')}</div>
-    <div>{comment.get('nick')}</div>
-    <div>{comment.get('text')}</div>
+    <div>{ISOTime}</div>
+    <div>{nick}</div>
+    <div>{text}</div>
   </div>
 )
 
 Comment.propTypes = {
-  comment: IPropTypes.Map.isRequired
+  nick: PropTypes.string.isRequired,
+  ISOTime: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 }
 
 export default Comment
