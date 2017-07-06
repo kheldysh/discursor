@@ -1,15 +1,15 @@
-import { fromJS } from 'immutable'
+import { Map } from 'immutable'
 import { CHOOSE_NICK } from '../actions'
 
-const initialState = fromJS({ nick: ''})
-
-export default function nick(state = initialState, action) {
+const nick = (state = Map({nick: ''}), action) => {
   switch (action.type) {
     case CHOOSE_NICK:
-      return fromJS({
+      return Map({
         nick: action.nick
       })
     default:
       return state
   }
 }
+
+export default nick

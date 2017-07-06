@@ -1,10 +1,7 @@
-import Immutable from 'immutable'
+import { List } from 'immutable'
 import { ADD_COMMENT } from '../actions'
 
-const initialState = Immutable.List()
-
-export default function comments(state = initialState, action) {
-  console.log(state)
+const comments = (state = List(), action) => {
   switch (action.type) {
     case ADD_COMMENT:
       return state.push(action.comment)
@@ -12,3 +9,5 @@ export default function comments(state = initialState, action) {
       return state
   }
 }
+
+export default comments
