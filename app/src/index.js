@@ -15,7 +15,7 @@ const initialState = Immutable.Map({
   comments: Immutable.List()
 })
 
-let store = createStore(
+const store = createStore(
   rootReducer,
   initialState,
   applyMiddleware(logger)
