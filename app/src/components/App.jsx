@@ -10,8 +10,10 @@ class App extends Component {
         <div className="App-header">
           <h2>Discursor test app</h2>
         </div>
-        <ChooseNick />
-        <Chat />
+        <div className="App-main">
+          <ChooseNick />
+          <Chat />
+        </div>
       </div>
     );
   }
