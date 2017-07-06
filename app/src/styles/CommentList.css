@@ -1,0 +1,25 @@
+.comment-list {
+  width: 60%;
+  padding-left: 50px;
+}
+
+.comment {
+  display: flex;
+
+}
+
+.comment > * {
+  margin: 0 3px;
+}
+
+.comment-timestamp: {
+  width: 80px;
+}
+
+.comment-nick {
+  width: 80px;
+}
+
+.comment-text: {
+  flex-grow: 1;
+}
