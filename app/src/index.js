@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { applyMiddleware, createStore } from 'redux'
 import logger from 'redux-logger'
+import Immutable from 'immutable'
 import './styles/index.css';
 import App from './components/App';
-import Immutable from 'immutable'
-import rootReducer from './rootReducer'
+import rootReducer from './reducers/rootReducer'
 import registerServiceWorker from './registerServiceWorker';
 import { init as initWebSocket } from './actions/webSocket'
 
