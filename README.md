@@ -1,16 +1,18 @@
 This is a simple proof-of-concept project for learning React, Redux and Node.js in a limited timeframe.
 
-To try in development mode:
+To try in development mode, type this in first terminal:
 
 ```
 npm install
 npm run start
 ```
-And in another terminal
+And this in another terminal:
   ```
 cd app/
 npm run start
 ```
+
+Finally, head to localhost:3000, unless the script has already taken you there.
 
 ## Status
 
