@@ -1,7 +1,9 @@
 const defaultPort = 3001
 const defaultHost = 'localhost'
-const httpURL = `http://${defaultHost}:${defaultPort}`
-const wsURL = `ws://${defaultHost}:${defaultPort}`
+// Uglify can't seem to handle ES6 string templating yet
+const defaultAddr = defaultHost + ':' + parseInt(defaultPort)
+const httpURL = 'http://' + defaultAddr // `http://${defaultHost}:${defaultPort}`
+const wsURL =  'ws://' + defaultAddr // `ws://${defaultHost}:${defaultPort}`
 
 export {
   defaultPort,
