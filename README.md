@@ -1,5 +1,17 @@
 This is a simple proof-of-concept project for learning React, Redux and Node.js in a limited timeframe.
 
+To try in development mode:
+
+```
+npm install
+npm run start
+```
+And in another terminal
+  ```
+cd app/
+npm run start
+```
+
 ## Status
 
 * A simple, non-persisted WebSocket-based chat. Has no sessions, no channels, just one page showing the messages.
