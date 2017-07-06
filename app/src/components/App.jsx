@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ChooseNick from './containers/ChooseNick'
-import Chat from './components/Chat'
-import './App.css';
+import ChooseNick from '../containers/ChooseNick'
+import Chat from './Chat'
+import '../App.css';
 
 class App extends Component {
   render() {
