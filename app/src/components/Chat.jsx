@@ -1,8 +1,12 @@
 import React from 'react'
 import TimeSortedCommentList from '../containers/TimeSortedCommentList'
+import AddComment from '../containers/AddComment'
 
 const Chat = () => (
-  <TimeSortedCommentList />
+  <div>
+    <TimeSortedCommentList />
+    <AddComment />
+  </div>
 )
 
 export default Chat
