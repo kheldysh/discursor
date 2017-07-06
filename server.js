@@ -1,27 +1,33 @@
-import express from 'express'
-import bodyParser from 'body-parser'
+import ws from 'ws'
 import http from 'http'
-import { host, port } from './common/config'
+import express from 'express'
+import { defaultHost, defaultPort } from './common/config'
+var app = express()
+var port = process.env.PORT || defaultPort
 
-const app = express()
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.post('/nick', (req, res) => {
-  console.log("nick request with "+req.body.nick)
-  res.send('Using nick: '+req.body.nick)
-})
-
-app.post('/start_chat', (req, res) => {
-
-})
+app.use(express.static(__dirname + "/"))
 
 const server = http.createServer(app)
+server.listen(port)
 
-server.listen(port, host, () => {
-  console.log('Discursor server listening on port '+port)
+console.log("http server listening on %d", port)
+
+const wsServer = new ws.Server({server: server})
+console.log("websocket server created")
+
+wsServer.on("connection", function(socket) {
+  console.log("websocket connection open")
+
+  socket.on('message', (message) => {
+    console.log(message)
+    wsServer.clients.forEach(client => {
+      if (client !== socket && client.readyState === ws.OPEN) {
+        client.send(message)
+      }
+    })
+  })
+
+  socket.on("close", function() {
+    console.log("websocket connection close")
+  })
 })
