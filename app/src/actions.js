@@ -1,6 +1,6 @@
 import Immutable from 'immutable'
 
-export const CHOOSE_NICK = 'ADD_TODO'
+export const CHOOSE_NICK = 'CHOOSE_NICK'
 export const ADD_COMMENT = 'ADD_COMMENT'
 
 /*
