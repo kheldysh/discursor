@@ -25,6 +25,7 @@ Finally, head to localhost:3000, unless the script has already taken you there.
  * Make Travis deploy it to Heroku
 
 * Features
+ * Implement join/part notifications
  * Implement channels/chatrooms
  * Implement user sessions (to not lose chat history upon reload, at the very least)
 
