@@ -1,3 +1,5 @@
+# Setup and run in dev mode 
+
 This is a simple proof-of-concept project for learning React, Redux and Node.js in a limited timeframe.
 
 To try in development mode, type this in project directory:
@@ -9,7 +11,7 @@ npm run start-dev
 
 Finally, head to `localhost:3000`, unless the script has already taken you there.
 
-## Status
+# Status
 
 * A simple, non-persisted WebSocket-based chat. Has no sessions, no chatrooms, just one page showing the messages.
 * Looks more like a single-channel IRC, really.
@@ -19,19 +21,19 @@ Finally, head to `localhost:3000`, unless the script has already taken you there
 * Has to be started manually.
 * Only tested in dev mode.
 
-## Next steps
+# Next steps
 
-### Build/infra
+## Build/infra
  * Build and run it in production mode
  * Make Travis deploy it to Heroku
  * Get rid of create-react-app magic
 
-### Features
+## Features
  * Implement join/part notifications
  * Implement channels/chatrooms
  * Implement user sessions (to not lose chat history upon reload, at the very least)
 
-### Code quality/practices
+## Code quality/practices
  * Re-evaluate application of immutable.js through the app code
  * Enforce Redux best practices
  * Thunks/Promises look nice...
