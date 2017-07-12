@@ -7,9 +7,9 @@ const presentableDate = (ISOTime) => {
 
 const Comment = ({nick, ISOTime, text}) => (
   <div className="comment">
-    <div className="comment-timestamp">{presentableDate(ISOTime)}</div>
-    <div className="comment-nick">{nick}</div>
-    <div className="comment-text">{text}</div>
+    <span className="comment-timestamp">{presentableDate(ISOTime)}</span>
+    <span className="comment-nick">{nick}</span>
+    <span className="comment-text">{text}</span>
   </div>
 )
 
