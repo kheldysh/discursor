@@ -18,7 +18,7 @@
     "url": "git+https://github.com/kheldysh/discursor.git"
   },
   "author": "Jesse Lankila",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kheldysh/discursor/issues"
   },
