@@ -23,6 +23,7 @@ Finally, head to localhost:3000, unless the script has already taken you there.
 * Build/infra:
  * Create a working production build
  * Make Travis deploy it to Heroku
+ * Get rid of create-react-app magic
 
 * Features
  * Implement join/part notifications
