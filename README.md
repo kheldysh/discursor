@@ -7,7 +7,7 @@ npm install
 npm run start-dev
 ```
 
-Finally, head to localhost:3000, unless the script has already taken you there.
+Finally, head to `localhost:3000`, unless the script has already taken you there.
 
 ## Status
 
@@ -21,7 +21,7 @@ Finally, head to localhost:3000, unless the script has already taken you there.
 
 ## Next steps
 * Build/infra:
- * Create a working production build
+ * Build and run it in production mode
  * Make Travis deploy it to Heroku
  * Get rid of create-react-app magic
 
