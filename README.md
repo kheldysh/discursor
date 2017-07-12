@@ -20,17 +20,18 @@ Finally, head to `localhost:3000`, unless the script has already taken you there
 * Only tested in dev mode.
 
 ## Next steps
-* Build/infra:
+
+### Build/infra
  * Build and run it in production mode
  * Make Travis deploy it to Heroku
  * Get rid of create-react-app magic
 
-* Features
+### Features
  * Implement join/part notifications
  * Implement channels/chatrooms
  * Implement user sessions (to not lose chat history upon reload, at the very least)
 
-* Code quality/practices
+### Code quality/practices
  * Re-evaluate application of immutable.js through the app code
  * Enforce Redux best practices
  * Thunks/Promises look nice...
